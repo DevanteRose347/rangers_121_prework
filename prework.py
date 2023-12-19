@@ -25,8 +25,7 @@ num_list_src = input("Input a set of numbers, consecutive or non-consecutive wit
 example:123456")
 num_list_src1 = list(num_list_src)
 print(num_list_src1)
-consecutive = is_consecutive(num_list_src1)
-if consecutive:
+if consecutive := is_consecutive(num_list_src1):
     print("consecutive set of numbers")
 else:
     print("not a consecutive set")
@@ -71,9 +70,8 @@ def is_leap_year(year):
 year = input("Enter a year and I will tell you if it is\
 a leap year: ")
 
-leap_year = is_leap_year(year)
 
-if leap_year:
+if leap_year := is_leap_year(year):
     print(f"{str(year)} is a leap year")
 else:
     print(f"{str(year)} is not a leap year")
